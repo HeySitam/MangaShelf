@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/mangaListFragment">
+
+    <fragment
+        android:id="@+id/mangaListFragment"
+        android:name="com.heysitam.mangashelf.views.fragments.MangaListFragment"
+        android:label="fragment_manga_list"
+        tools:layout="@layout/fragment_manga_list" >
+        <action
+            android:id="@+id/action_mangaListFragment_to_mangaDetailsFragment"
+            app:destination="@id/mangaDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mangaDetailsFragment"
+        android:name="com.heysitam.mangashelf.views.fragments.MangaDetailsFragment"
+        android:label="fragment_manga_details"
+        tools:layout="@layout/fragment_manga_details" />
+</navigation>
